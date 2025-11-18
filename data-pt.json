@@ -1,0 +1,59 @@
+{
+    "restaurant": {
+      "name": "La Parrilla de Bialet",
+      "logoURL": "https://i.imgur.com/S4x8v2H.jpeg",
+      "tagline": "Sabores clássicos com um toque moderno",
+      "palette": {
+        "brand": "#6C5CE7",
+        "accent": "#00D1B2",
+        "bg": "#f7f7fb",
+        "surface": "#ffffff",
+        "text": "#1f2937",
+        "muted": "#6b7280"
+      }
+    },
+    "categories": [
+      { "id": "entradas", "label": "Entradas", "emoji": "🥟" },
+      { "id": "minutas", "label": "Pratos Rápidos", "emoji": "🍽️" },
+      { "id": "carnes", "label": "Carnes", "emoji": "🥩" },
+      { "id": "postres", "label": "Sobremesas", "emoji": "🍮" },
+      { "id": "bebidas", "label": "Bebidas", "emoji": "🥤" }
+    ],
+    "menu": [
+      { "cat": "entradas", "title": "Empanadas de carne (x2)", "desc": "Assadas, suculentas, receita caseira.", "price": 2500, "img": "https://i.imgur.com/kHslOey.jpeg" },
+      { "cat": "entradas", "title": "Provoleta clássica", "desc": "Provolone grelhado com orégano e chimichurri.", "price": 6500, "img": "https://i.imgur.com/FirnC5A.jpeg" },
+      { "cat": "entradas", "title": "Bruschettas variadas", "desc": "Tomate, manjericão, azeite e pão tostado.", "price": 4800, "img": "https://i.imgur.com/iFZBMOh.jpeg" },
+      { "cat": "entradas", "title": "Tábua de queijos", "desc": "Queijos artesanais com frutas secas.", "price": 7200, "img": "https://i.imgur.com/SfDysMs.jpeg" },
+      { "cat": "entradas", "title": "Ceviche de peixe", "desc": "Fresco com limão, coentro e cebola roxa.", "price": 8500, "img": "https://i.imgur.com/axkyHM0.jpeg" },
+      { "cat": "entradas", "title": "Azeitonas marinadas", "desc": "Seleção de azeitonas com temperos.", "price": 3200, "img": "https://i.imgur.com/TbxmUPI.jpeg" },
+  
+      { "cat": "minutas", "title": "Milanesa com fritas", "desc": "Clássica, corte generoso, batatas crocantes.", "price": 11500, "img": "https://i.imgur.com/MnqiUan.jpeg" },
+      { "cat": "minutas", "title": "Hambúrguer gourmet", "desc": "Pão artesanal, cheddar, alface, tomate.", "price": 9800, "img": "https://i.imgur.com/GgWwBmc.jpeg" },
+      { "cat": "minutas", "title": "Pizza napolitana", "desc": "Massa fina, tomate, mussarela, manjericão.", "price": 8600, "img": "https://i.imgur.com/AOYdq0O.jpeg" },
+      { "cat": "minutas", "title": "Taco mexicano", "desc": "Recheio de carne ou frango com molho caseiro.", "price": 7500, "img": "https://i.imgur.com/4xUfht1.jpeg" },
+      { "cat": "minutas", "title": "Wrap vegetariano", "desc": "Vegetais frescos, homus e pão sírio.", "price": 6200, "img": "https://i.imgur.com/6DFGb5i.jpeg" },
+      { "cat": "minutas", "title": "Sanduíche de frango", "desc": "Peito grelhado, maionese e alface.", "price": 7100, "img": "https://i.imgur.com/KIp13Ta.jpeg" },
+  
+      { "cat": "carnes", "title": "Asado de tira", "desc": "Na parrilla, ponto a escolher.", "price": 15900, "img": "https://i.imgur.com/gLBP22l.jpeg" },
+      { "cat": "carnes", "title": "Bife de chorizo", "desc": "Corte suculento com acompanhamento de batatas.", "price": 14800, "img": "https://i.imgur.com/wt8y5CS.jpeg" },
+      { "cat": "carnes", "title": "Vazio na parrilla", "desc": "Macio, marinado com chimichurri.", "price": 13900, "img": "https://i.imgur.com/5lxFsDA.jpeg" },
+      { "cat": "carnes", "title": "Frango ao limão", "desc": "Suprema grelhada com molho cítrico.", "price": 9800, "img": "https://i.imgur.com/egkvlxl.jpeg" },
+      { "cat": "carnes", "title": "Costelas BBQ", "desc": "Macias e suculentas com molho barbecue.", "price": 13500, "img": "https://i.imgur.com/lA8TzLD.jpeg" },
+      { "cat": "carnes", "title": "Chorizo parrillero", "desc": "Clássico chorizo na parrilla com chimichurri.", "price": 6800, "img": "https://i.imgur.com/bxphkvu.jpeg" },
+  
+      { "cat": "postres", "title": "Pudim caseiro", "desc": "Com doce de leite e creme.", "price": 3800, "img": "https://i.imgur.com/ccBtUDq.jpeg" },
+      { "cat": "postres", "title": "Tiramisù", "desc": "Clássico italiano com café e cacau.", "price": 4900, "img": "https://i.imgur.com/gxj8IJ3.jpeg" },
+      { "cat": "postres", "title": "Cheesecake de frutas vermelhas", "desc": "Base de biscoito e creme suave.", "price": 5200, "img": "https://i.imgur.com/aSNZN2p.jpeg" },
+      { "cat": "postres", "title": "Brownie com sorvete", "desc": "Chocolate intenso e sorvete de baunilha.", "price": 4500, "img": "https://i.imgur.com/wYWZTbK.jpeg" },
+      { "cat": "postres", "title": "Sorvete artesanal", "desc": "Sabores variados, taça ou casquinha.", "price": 3800, "img": "https://i.imgur.com/oKZ30RH.jpeg" },
+      { "cat": "postres", "title": "Panqueca com doce de leite", "desc": "Receita caseira, cobertura de chocolate opcional.", "price": 4200, "img": "https://i.imgur.com/PVouwLV.jpeg" },
+  
+      { "cat": "bebidas", "title": "Cerveja artesanal", "desc": "IPA ou Golden.", "price": 3600, "img": "https://i.imgur.com/HavCPsZ.jpeg" },
+      { "cat": "bebidas", "title": "Vinho Malbec", "desc": "Garrafa 750ml, seleção da casa.", "price": 9500, "img": "https://i.imgur.com/iZubI95.jpeg" },
+      { "cat": "bebidas", "title": "Água mineral", "desc": "Com gás ou sem gás.", "price": 1500, "img": "https://i.imgur.com/cxwELBm.jpeg" },
+      { "cat": "bebidas", "title": "Refrigerante", "desc": "Variedade de sabores, lata 355ml.", "price": 1200, "img": "https://i.imgur.com/Y1EQtKT.jpeg" },
+      { "cat": "bebidas", "title": "Limonada fresca", "desc": "Feita na hora, com hortelã e limão.", "price": 2000, "img": "https://i.imgur.com/ZYnXofD.jpeg" },
+      { "cat": "bebidas", "title": "Café espresso", "desc": "Ideal para acompanhar sobremesas.", "price": 1800, "img": "https://i.imgur.com/uzLIPgp.jpeg" }
+    ]
+  }
+  
