@@ -6,14 +6,30 @@
   <title>Carta de la Parrilla</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Botón de idioma -->
+  <button id="langToggle" class="lang-toggle">ES | PT</button>
+
   <header class="hero">
     <div class="container">
       <div class="brand-row">
         <div class="logo" id="logo">R</div>
+
         <div>
-          <h1 class="brand-title" id="brandTitle">La Parrilla de Bialet</h1>
-          <p class="brand-sub" id="brandSubtitle">La carta de nuestros sabores!</p>
+          <h1 class="brand-title" 
+              id="brandTitle"
+              data-es="La Parrilla de Bialet"
+              data-pt="A Churrascaria de Bialet">
+              La Parrilla de Bialet
+          </h1>
+
+          <p class="brand-sub"
+             id="brandSubtitle"
+             data-es="¡La carta de nuestros sabores!"
+             data-pt="O cardápio dos nossos sabores!">
+             ¡La carta de nuestros sabores!
+          </p>
         </div>
       </div>
     </div>
@@ -26,15 +42,97 @@
   <main class="container" id="main"></main>
 
   <footer class="container">
-    <small id="footerNote">
+    <small
+      id="footerNote"
+      data-es="* Los precios y fotos son ilustrativos para la demo. Formato de moneda: ARS. | ¿Querés esta carta con tu logo, tus colores y tus platos? ¡Se personaliza en minutos!"
+      data-pt="* Os preços e fotos são ilustrativos para a demonstração. Moeda: ARS. | Quer este cardápio com o seu logo, suas cores e seus pratos? Personaliza-se em minutos!">
       * Los precios y fotos son ilustrativos para la demo. Formato de moneda: ARS. |
       ¿Querés esta carta con tu logo, tus colores y tus platos? ¡Se personaliza en minutos!
     </small>
   </footer>
 
+  <!-- FOOTER ORIGINAL COMPLETO -->
+  <footer>
+    <div class="footer-container">
+
+      <div class="footer-info">
+        <h3 
+          data-es="La Parrilla de Bialet"
+          data-pt="A Churrascaria de Bialet">
+          La Parrilla de Bialet
+        </h3>
+
+        <p 
+          data-es="📍 RN38 573, Bialet Massé, Córdoba"
+          data-pt="📍 RN38 573, Bialet Massé, Córdoba">
+          📍 RN38 573, Bialet Massé, Córdoba
+        </p>
+
+        <p>
+          <a href="https://maps.app.goo.gl/PMU8wn8FnYk29z7o9" target="_blank"
+             data-es="Ver en Google Maps"
+             data-pt="Ver no Google Maps">
+             Ver en Google Maps
+          </a>
+        </p>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank"
+           data-es="🌐 Facebook"
+           data-pt="🌐 Facebook">
+           🌐 Facebook
+        </a>
+
+        <a href="https://instagram.com" target="_blank"
+           data-es="📸 Instagram"
+           data-pt="📸 Instagram">
+           📸 Instagram
+        </a>
+
+        <a href="https://wa.me/5491122334455" target="_blank"
+           data-es="💬 WhatsApp"
+           data-pt="💬 WhatsApp">
+           💬 WhatsApp
+        </a>
+      </div>
+
+      <div class="footer-cta">
+        <p 
+          data-es="¿Querés un menú virtual como este?"
+          data-pt="Quer um menu virtual como este?">
+          ¿Querés un menú virtual como este?
+        </p>
+
+        <a href="https://mirandafrancocba.github.io/Portfolio/" target="_blank" class="cta-button"
+          data-es="Contactame"
+          data-pt="Contato">
+          Contactame
+        </a>
+      </div>
+    </div>
+  </footer>
+
   <button class="back-top" id="backTop" aria-label="Volver arriba">↑ Arriba</button>
 
-  <!-- Language & Darkmode controls are injected by app.js -->
-  <script type="module" src="app.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Script de traducción -->
+  <script>
+    const toggle = document.getElementById("langToggle");
+    let currentLang = "es";
+
+    function translatePage(lang) {
+      document.querySelectorAll("[data-es]").forEach(el => {
+        el.innerHTML = el.getAttribute(`data-${lang}`);
+      });
+    }
+
+    toggle.addEventListener("click", () => {
+      currentLang = currentLang === "es" ? "pt" : "es";
+      translatePage(currentLang);
+      toggle.textContent = currentLang === "es" ? "ES | PT" : "PT | ES";
+    });
+  </script>
 </body>
 </html>
